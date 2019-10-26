@@ -1,0 +1,46 @@
+.page__footer{
+    padding: 20px 0;
+
+    header > h3{
+        font-size: $fontMedium;
+        color: #c4c4c4;
+    }
+    p,ul,li{
+        font-size: $fontSmall;
+        color: #686868;
+    }
+    a{
+        font-size: $fontSmall;
+        text-decoration: none;
+        color: #26A5CC;
+
+        &:hover{
+            color: rgb(27, 141, 175);
+        }
+    }
+
+    ul{
+        list-style: none;
+        margin: 0; padding: 0;
+    }
+
+    .row > div{
+        padding-bottom: 15px;
+
+        img{
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+    }
+
+    &-contactform{
+        & li{
+            margin-bottom: 4px;
+
+            & i {
+                padding-right: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.about__person{
+    text-align: left;
+
+    @media #{$medium}{
+        text-align: center;
+    }
+
+    &-name{
+        margin-bottom: 5px;
+    }
+    &-position{
+        font-size: $fontSmall;
+        margin: 5px 0;
+    }
+}

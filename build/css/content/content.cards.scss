@@ -1,0 +1,22 @@
+.services__card{
+    margin-top: 35px;
+    padding: 0 16px;
+    
+    &, & * {
+        text-align: center;
+    }
+    &,
+    &-button,
+    & p{
+        font-size: $fontSmall;
+    }
+    h2{
+        min-height: 46px;
+    }
+    p{
+        min-height: 45px;
+    }
+    &-icon{
+        color: rgb(212, 212, 212);
+    }
+}

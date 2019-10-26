@@ -1,0 +1,19 @@
+.blog__post{
+    header{
+        h2{
+            margin-bottom: 8px;
+        }
+    }
+    &-date,
+    &-author{
+        font-size: $fontSmall;
+        font-weight: bold;
+    }
+    &-date{
+        padding-left: 10px;
+        color: rgb(185, 185, 185);
+    }
+    &-author{
+        color: #000;
+    }
+}
