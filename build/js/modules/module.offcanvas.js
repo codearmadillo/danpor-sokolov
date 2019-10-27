@@ -1,24 +1,17 @@
 var moduleOffcanvas = {
-    toggle:function(){
-        var offset = $(".page__offcanvas").width();
-        moduleOffcanvas.animateCanvas(offset);
-    },
-    animateCanvas:function(offset){
-        var canvas = $(".page__oncanvas");
-        var offcanvas = $(".page__offcanvas");
 
-        var pos = canvas.position();
+    toggle: function() {
 
-        if(pos.left === 0){
-            canvas.animate({
-                left: offset
-            }, 450);
-        } else {
-            canvas.animate({
-                left: 0
-            }, 450);
-        }
+      var element = document.querySelector('.page__offcanvas');
 
-        offcanvas.toggle('slide', 450);
+      if(!element) return;
+
+      if(element.hasClass('active')) {
+        element.removeClass('active');
+      } else {
+        element.addClass('active');
+      }
+
     }
+
 }

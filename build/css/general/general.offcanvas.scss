@@ -5,6 +5,8 @@
     display: none;
     box-sizing: border-box;
     width: 100%;
+    transition: 350ms ease-in-out;
+    transform: translateX(-100%);
 
     @media #{$small}{
         width: 50%;
@@ -72,4 +74,11 @@
             }
         }
     }
+
+    &.active {
+
+      transform: translateX(0%);
+
+    }
+
 }
