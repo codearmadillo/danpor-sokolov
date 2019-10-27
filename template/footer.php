@@ -87,6 +87,7 @@
         </div>
         <script type="text/javascript">
             packageSchema.init();
+            packageLazyload.init();
         </script>
     </body>
 </html>

@@ -1,12 +1,16 @@
-var packageLazyload = {
-    init:function(){
-        $(".js-lazyload").each(function(){
-            $(this).attr('src', $(this).attr('data-reference'));
-            console.log($(this).attr('data-reference'));
-        });
-    }
-}
+    var packageLazyload = {
 
-$(document).ready(function(){
-    packageLazyload.init();
-});
+  init:function(){
+    
+    var images = document.querySelectorAll('img.js-lazyload');
+
+    for(let i = 0; i < images.length; i++) {
+
+      var image = images[i];
+      image.setAttribute('src', image.getAttribute('data-reference'));
+
+    }
+    
+  }
+  
+}
