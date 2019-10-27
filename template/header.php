@@ -77,37 +77,30 @@
         <!-- Twitter -->
 
         <!-- Mobile platforms icons and Windows Metro icons -->
-        <link rel="icon" type="image/png" href="<?php echo CONST_TEMPLATEDIR;?>/res/favicon-16.png" sizes="16x16">
-        <link rel="icon" type="image/png" href="<?php echo CONST_TEMPLATEDIR;?>/res/favicon-32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="<?php echo CONST_TEMPLATEDIR;?>/res/favicon-96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="<?php echo CONST_TEMPLATEDIR;?>/res/favicon-128.png" sizes="128x128">
-        <link rel="icon" type="image/png" href="<?php echo CONST_TEMPLATEDIR;?>/res/favicon-160.png" sizes="160x160">
-        <link rel="icon" type="image/png" href="<?php echo CONST_TEMPLATEDIR;?>/res/favicon-196.png" sizes="196x196">
-        <link rel="icon" type="image/png" href="<?php echo CONST_TEMPLATEDIR;?>/res/favicon-228.png" sizes="228x228">
+        <link rel="icon" type="image/png" href="<?php echo CONST_TEMPLATEDIR;?>/resources/favicon-16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="<?php echo CONST_TEMPLATEDIR;?>/resources/favicon-32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="<?php echo CONST_TEMPLATEDIR;?>/resources/favicon-96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="<?php echo CONST_TEMPLATEDIR;?>/resources/favicon-128.png" sizes="128x128">
+        <link rel="icon" type="image/png" href="<?php echo CONST_TEMPLATEDIR;?>/resources/favicon-160.png" sizes="160x160">
+        <link rel="icon" type="image/png" href="<?php echo CONST_TEMPLATEDIR;?>/resources/favicon-196.png" sizes="196x196">
+        <link rel="icon" type="image/png" href="<?php echo CONST_TEMPLATEDIR;?>/resources/favicon-228.png" sizes="228x228">
         
-        <link rel="apple-touch-icon" sizes="57x57" href="<?php echo CONST_TEMPLATEDIR;?>/res/icon-appletouch-57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="<?php echo CONST_TEMPLATEDIR;?>/res/icon-appletouch-60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="<?php echo CONST_TEMPLATEDIR;?>/res/icon-appletouch-72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="<?php echo CONST_TEMPLATEDIR;?>/res/icon-appletouch-76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="<?php echo CONST_TEMPLATEDIR;?>/res/icon-appletouch-114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="<?php echo CONST_TEMPLATEDIR;?>/res/icon-appletouch-120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="<?php echo CONST_TEMPLATEDIR;?>/res/icon-appletouch-144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="<?php echo CONST_TEMPLATEDIR;?>/res/icon-appletouch-152.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="<?php echo CONST_TEMPLATEDIR;?>/resources/icon-appletouch-57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="<?php echo CONST_TEMPLATEDIR;?>/resources/icon-appletouch-60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="<?php echo CONST_TEMPLATEDIR;?>/resources/icon-appletouch-72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="<?php echo CONST_TEMPLATEDIR;?>/resources/icon-appletouch-76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="<?php echo CONST_TEMPLATEDIR;?>/resources/icon-appletouch-114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="<?php echo CONST_TEMPLATEDIR;?>/resources/icon-appletouch-120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="<?php echo CONST_TEMPLATEDIR;?>/resources/icon-appletouch-144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="<?php echo CONST_TEMPLATEDIR;?>/resources/icon-appletouch-152.png">
 
-        <!-- jQuery and bundle.js -->
-        <!-- CDN jQuery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- Bundle -->
         <script type="text/javascript" src="<?php echo CONST_TEMPLATEDIR;?>/js/bundle.js"></script>
-        <script type="text/javascript" src="<?php echo CONST_TEMPLATEDIR;?>/js/jquery-ui.min.js"></script>
 
-        <!-- Wordpress head -->
+        <!-- Wordpresourcess head -->
         <?php wp_head();?>
 
-        <!-- FontAwesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
         <!-- Stylesheets -->
-        <link rel="stylesheet" type="text/css" href="<?php echo CONST_TEMPLATEDIR;?>/css/flexboxgrid.min.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo CONST_TEMPLATEDIR;?>/css/default.css" />
 
         <!-- Fonts -->
@@ -168,7 +161,7 @@
                     <div class="row">
                         <div class="col-xs-6 col-md-4" style="position: relative; box-sizing: border-box; padding: 8px;">
                             <a href="/" title="Danpor Sokolov s.r.o.">
-                                <img src="<?php echo CONST_TEMPLATEDIR;?>/res/danporLogo.png" alt="Danpor Sokolov s.r.o." title="Danpor Sokolov s.r.o." class="page__header-logo">
+                                <img src="<?php echo CONST_TEMPLATEDIR;?>/resources/danporLogo.png" alt="Danpor Sokolov s.r.o." title="Danpor Sokolov s.r.o." class="page__header-logo">
                             </a>
                         </div>
                         <div class="col-xs-6 col-md-8" style="padding-top: 21px;">

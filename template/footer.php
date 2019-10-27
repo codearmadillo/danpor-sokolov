@@ -69,7 +69,7 @@
                         </div>
                         <div class="col-xs-12">
                             <a href="http://www.zalozfirmu.cz/?aid=0155815001" title="ZalozFirmu.cz - Online zakládání firem">
-                                <img class="js-lazyload" data-reference="<?php echo CONST_TEMPLATEDIR;?>/res/banner_zalozfirmu.jpg" alt="Založ Firmu">
+                                <img class="js-lazyload" data-reference="<?php echo CONST_TEMPLATEDIR;?>/resources/banner_zalozfirmu.jpg" alt="Založ Firmu">
                             </a>
                         </div>
                     </div>

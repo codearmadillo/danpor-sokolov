@@ -1,5 +1,6 @@
 ## Build files
-dest/css/default.css
-dest/js/bundle.js
+dest/
+template/dest
 
+## Node modules
 node_modules
