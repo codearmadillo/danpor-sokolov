@@ -1,4 +1,4 @@
-    var packageLazyload = {
+var packageLazyload = {
 
   init:function(){
     

@@ -1,17 +1,17 @@
 var moduleOffcanvas = {
 
-    toggle: function() {
+  toggle: function() {
 
-      var element = document.querySelector('.page__offcanvas');
+    var element = document.querySelector('.page__offcanvas');
 
-      if(!element) return;
+    if(!element) return;
 
-      if(element.hasClass('active')) {
-        element.removeClass('active');
-      } else {
-        element.addClass('active');
-      }
-
+    if(element.hasClass('active')) {
+      element.removeClass('active');
+    } else {
+      element.addClass('active');
     }
+
+  }
 
 }
