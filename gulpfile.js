@@ -7,12 +7,12 @@ var gulp = require('gulp'),
   util = require('gulp-util')
 
   watch = {
-    'stylesheet':'build/css/**/*.scss',
-    'javascript':'build/js/**/*.js'
+    'stylesheet':'src/css/**/*.scss',
+    'javascript':'src/js/**/*.js'
   },
   input  = {
-    'stylesheet':'build/css/default.scss',
-    'javascript':'build/js/**/*.js'
+    'stylesheet':'src/css/default.scss',
+    'javascript':'src/js/**/*.js'
   },
   output = {
     'stylesheet':'dest/',
