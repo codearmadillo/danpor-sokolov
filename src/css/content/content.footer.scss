@@ -66,6 +66,8 @@
 
     .section {
 
+      box-sizing: border-box;
+      padding: 0 8px 15px;
       flex: 0 1 100%;
       
       @media #{$small} {

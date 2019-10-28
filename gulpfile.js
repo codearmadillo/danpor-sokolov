@@ -15,16 +15,16 @@ var gulp = require('gulp'),
     'javascript':'src/js/**/*.js'
   },
   output = {
-    'stylesheet':'template/dest/',
-    'javascript':'template/dest/'
+    'stylesheet':'dest/',
+    'javascript':'dest/'
   },
   production = {
-    'stylesheet':'template/dest/',
-    'javascript':'template/dest/'
+    'stylesheet':'dest/',
+    'javascript':'dest/'
   };
 
 /** Default task */
-gulp.task('default', ['scss','javascript','copy','watch']);
+gulp.task('default', ['scss','javascript','watch']);
 
 /** SCSS */
 gulp.task('scss',function(){
@@ -46,13 +46,7 @@ gulp.task('javascript', function(){
     .pipe(util.env.type === 'production' ? gulp.dest(production.javascript) : gulp.dest(output.javascript));
 });
 
-/** Copy */
-gulp.task('copy', function(){
-  return gulp.src(['template/*.php'])
-  .pipe(gulp.dest('C:\\xampp\htdocs\danpor\wp-content\themes\danpor'))
-});
-
 gulp.task('watch', function(){
-    gulp.watch(watch.stylesheet, ['scss','copy']);
-    gulp.watch(watch.javascript, ['javascript','copy']);
+    gulp.watch(watch.stylesheet, ['scss']);
+    gulp.watch(watch.javascript, ['javascript']);
 });
