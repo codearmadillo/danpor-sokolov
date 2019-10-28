@@ -1,0 +1,20 @@
+.page__carousel{
+    padding: 135px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../res/bck-carousel.jpg');
+    color: #fff;
+
+    &-mainheadline{
+        margin-top: 0; margin-bottom: 0;
+        font-size: $fontHeadline-First;
+    }
+    &-subheadline{
+        font-size: $fontHeadline-Second;
+        margin: 20px 0;
+    }
+    &-button{
+        margin-right: 16px;
+    }
+}

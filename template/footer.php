@@ -1,12 +1,3 @@
-        <div class="page__sitesearch">
-            <div class="container">
-            <?php
-            $seoId = get_page_by_title('Default')->ID;
-            
-            get_search_form();
-            ?>
-            </div>
-        </div>
       <footer class="page__footer">
         <div class="container">
               <div class="section">

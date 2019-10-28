@@ -1,0 +1,49 @@
+.page__header{
+
+  background-color: #fff;
+
+  &-logo{
+    display: none;
+  }
+
+  .container {
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    .section {
+
+      flex: 0 1 50%;
+
+      &-logo {
+
+        @media #{$medium} {
+
+          flex-basis: 33.33332%;
+
+        }
+
+      }
+
+      &-menu {
+
+        height: 64px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+
+        @media #{$medium} {
+
+          height: auto;
+          flex-basis: 66.66668%;
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

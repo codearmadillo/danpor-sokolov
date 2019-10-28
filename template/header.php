@@ -1,6 +1,6 @@
 <?php
     /* Setup page constants */
-    define('CONST_TEMPLATEDIR','/wp-content/themes/danpor');
+    define('CONST_TEMPLATEDIR','wp-content/themes/danpor');
 
     /* Page meta */
     function getPageMeta(){
@@ -95,13 +95,13 @@
         <link rel="apple-touch-icon" sizes="152x152" href="<?php echo CONST_TEMPLATEDIR;?>/resources/icon-appletouch-152.png">
 
         <!-- Bundle -->
-        <script type="text/javascript" src="<?php echo CONST_TEMPLATEDIR;?>/js/bundle.js"></script>
+        <script type="text/javascript" src="<?php echo CONST_TEMPLATEDIR;?>/dest/bundle.js"></script>
 
         <!-- Wordpresourcess head -->
         <?php wp_head();?>
 
         <!-- Stylesheets -->
-        <link rel="stylesheet" type="text/css" href="<?php echo CONST_TEMPLATEDIR;?>/css/default.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo CONST_TEMPLATEDIR;?>/dest/default.css" />
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,800&amp;subset=latin-ext" rel="stylesheet">
@@ -109,75 +109,66 @@
     <body>
         <div class="page__offcanvas">
             <header>
-                Danpor Sokolov
-                <span class="js-nav-main__toggle">
-                    <i class="fa fa-bars" onclick="moduleOffcanvas.toggle()"></i>
-                </span>
+              <span class="nav-main__toggle" onclick="moduleOffcanvas.toggle()"></span>
             </header>
             <?php
             $args = array(
-                'theme_location'=>'main_menu',
-                'menu_class'=>'nav-offcanvas',
-                'fallback_cb'=>false,
-                'depth'=>0
+              'theme_location'=>'main_menu',
+              'menu_class'=>'nav-offcanvas',
+              'fallback_cb'=>false,
+              'depth'=>0
             );
             wp_nav_menu($args);
             ?>
         </div>
         <div class="page__oncanvas">
-            <section class="page__topbar hide-mobile">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 text-left">
-                            <?php
-                            $args = array(
-                                'theme_location'=>'footer_additional',
-                                'menu_class'=>'nav-topbar',
-                                'fallback_cb'=>false,
-                                'depth'=>0
-                            );
-                            wp_nav_menu($args);
-                            ?>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 text-right">
-                            <span class="topbar__contact">
-                                <i class="fa fa-envelope"></i>
-                                <a href="mailto:danporsokolov@volny.cz" title="Email">danporsokolov@volny.cz</a>
-                            </span>
-                            <span class="topbar__contact">
-                                <i class="fa fa-phone"></i>
-                                <a href="tel:+420352603122" title="Telefon">+420 352 603 122</a>
-                            </span>
-                            <span class="topbar__contact">
-                                <i class="fa fa-phone"></i>
-                                <a href="tel:+420777706986" title="Telefon">+420 777 706 986</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <header class="page__header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-6 col-md-4" style="position: relative; box-sizing: border-box; padding: 8px;">
-                            <a href="/" title="Danpor Sokolov s.r.o.">
-                                <img src="<?php echo CONST_TEMPLATEDIR;?>/resources/danporLogo.png" alt="Danpor Sokolov s.r.o." title="Danpor Sokolov s.r.o." class="page__header-logo">
-                            </a>
-                        </div>
-                        <div class="col-xs-6 col-md-8" style="padding-top: 21px;">
-                            <span class="nav-main__toggle js-nav-main__toggle">
-                                <i class="fa fa-bars" onclick="moduleOffcanvas.toggle()"></i>
-                            </span>
-                        <?php
-                        $args = array(
-                            'theme_location'=>'main_menu',
-                            'menu_class'=>'nav-main',
-                            'fallback_cb'=>false,
-                            'depth'=>0
-                        );
-                        wp_nav_menu($args);
-                        ?>
-                        </div>
-                    </div>
-                </div>
-            </header>   
+        <section class="page__topbar hide-mobile">
+          <div class="container">
+            <div class="section text-left">
+              <?php
+              $args = array(
+                'theme_location'=>'footer_additional',
+                'menu_class'=>'nav-topbar',
+                'fallback_cb'=>false,
+                'depth'=>0
+              );
+              wp_nav_menu($args);
+              ?>
+            </div>
+            <div class="section text-right">
+              <span class="topbar__contact">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:danporsokolov@volny.cz" title="Email">danporsokolov@volny.cz</a>
+              </span>
+              <span class="topbar__contact">
+                <i class="fa fa-phone"></i>
+                <a href="tel:+420352603122" title="Telefon">+420 352 603 122</a>
+              </span>
+              <span class="topbar__contact">
+                <i class="fa fa-phone"></i>
+                <a href="tel:+420777706986" title="Telefon">+420 777 706 986</a>
+              </span>
+            </div>
+          </div>
+        </section>
+        <header class="page__header">
+            <div class="container">
+              <div class="section section-logo" style="position: relative; box-sizing: border-box; padding: 8px;">
+                <a href="/" title="Danpor Sokolov s.r.o.">
+                  <img src="<?php echo CONST_TEMPLATEDIR;?>/resources/danporLogo.png" alt="Danpor Sokolov s.r.o." title="Danpor Sokolov s.r.o." class="page__header-logo">
+                </a>
+              </div>
+              <div class="section section-menu">
+                <span class="nav-main__toggle" onclick="moduleOffcanvas.toggle()"></span>
+              <?php
+              $args = array(
+                'theme_location'=>'main_menu',
+                'menu_class'=>'nav-main',
+                'fallback_cb'=>false,
+                'depth'=>0
+              );
+              wp_nav_menu($args);
+              ?>
+            </div>
+          </div>
+        </header>   
