@@ -1,6 +1,8 @@
 <?php
   /* Setup page constants */
-  define('CONST_TEMPLATEDIR','wp-content/themes/danpor');
+  // define('CONST_TEMPLATEDIR','wp-content/themes/danpor');
+
+  define('CONST_TEMPLATEDIR','/danpor/wp-content/themes/danpor');
 
   /* Page meta */
   function getPageMeta(){
@@ -99,7 +101,7 @@
 
     <!-- Wordpresourcess head -->
     <?php wp_head();?>
-
+  
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="<?php echo CONST_TEMPLATEDIR;?>/dest/default.css" />
 
