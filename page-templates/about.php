@@ -20,11 +20,11 @@
     <section class="page-main">
         <h1><?php echo $post->post_title; ?></h1>
         <p><?php echo $post->post_content; ?></p>
-        <div class="row">
+        <div class="persons-list">
           <?php
             foreach(get_field('person', $post->ID) as $person){
               echo '
-              <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="person">
                   <article class="about__person">
                       <h3 class="about__person-name">'.$person["name"].'</h3>
                       <h4 class="about__person-position">'.$person["position"].'</h4>

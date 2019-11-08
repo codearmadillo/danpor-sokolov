@@ -4,3 +4,28 @@
   padding: 26px 0 85px;
 
 }
+.persons-list {
+
+  display: flex;
+  flex-flow: row wrap;
+
+  .person {
+
+    display: block;
+    flex: 0 1 100%;
+
+    @media #{$small} {
+
+      flex-basis: 50%;
+
+    }
+
+    @media #{$medium} {
+
+      flex-basis: 33.33332%;
+
+    }
+
+  }
+
+}
