@@ -1,8 +1,8 @@
 <?php
   /* Setup page constants */
-  // define('CONST_TEMPLATEDIR','wp-content/themes/danpor');
+  define('CONST_TEMPLATEDIR','wp-content/themes/danpor');
 
-  define('CONST_TEMPLATEDIR','/danpor/wp-content/themes/danpor');
+  // ;define('CONST_TEMPLATEDIR','/danpor/wp-content/themes/danpor');
 
   /* Page meta */
   function getPageMeta(){
