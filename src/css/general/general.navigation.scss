@@ -1,37 +1,17 @@
-.nav-main__toggle{
-  
-  display: block;
-  width: 20px;
-  height: 3px;
-  position: relative;
-  background: #000;
+.nav-toggle {
+
+  display: flex;
+  width: 32px;
+  height: 32px;
+  margin: 12px 0;
   float: right;
+  align-items: center;
+  justify-content: center;
 
-  @media #{$medium}{
-    display: none;
-  }
+  img.nav-toggle-icon {
 
-  &::after,
-  &::before  {
-
-    content: '';
-    position: absolute;
-    width: 26px;
-    height: 3px;
-    left: 0;
-    background: #000;
-
-  }
-
-  &::after {
-
-    top: 6px;
-
-  }
-
-  &::before {
-    
-    top: -6px;
+    width: 20px;
+    height: auto;
 
   }
 
