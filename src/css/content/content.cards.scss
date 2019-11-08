@@ -1,3 +1,46 @@
+.services {
+
+  &-grid {
+
+    display: flex;
+    flex-flow: row wrap;
+
+  }
+
+  &-header {
+
+    font-size: 28px;
+    margin-top: 48px;
+
+  }
+
+  &-header,
+  &-desc {
+
+    flex: 0 1 100%;
+    text-align: center;
+
+  }
+
+  &-item {
+
+    box-sizing: border-box;
+    flex: 0 1 100%;
+
+    @media #{$small} {
+        
+      flex-basis: 50%;
+      
+    }
+    @media #{$medium} {
+      
+      flex-basis: 25%;
+
+    }
+
+  }
+
+}
 .services__card{
     margin-top: 35px;
     padding: 0 16px;
