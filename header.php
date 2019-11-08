@@ -141,15 +141,15 @@
           </div>
           <div class="section text-right">
             <span class="topbar__contact">
-              <i class="fa fa-envelope"></i>
+              <img alt="icon" class="topbar__icon topbar__icon--mail" src="<?php echo CONST_TEMPLATEDIR;?>/resources/icon.mail.svg" />
               <a href="mailto:danporsokolov@volny.cz" title="Email">danporsokolov@volny.cz</a>
             </span>
             <span class="topbar__contact">
-              <i class="fa fa-phone"></i>
+              <img alt="icon" class="topbar__icon topbar__icon--phone" src="<?php echo CONST_TEMPLATEDIR;?>/resources/icon.phone.svg" />
               <a href="tel:+420352603122" title="Telefon">+420 352 603 122</a>
             </span>
             <span class="topbar__contact">
-              <i class="fa fa-phone"></i>
+              <img alt="icon" class="topbar__icon topbar__icon--phone" src="<?php echo CONST_TEMPLATEDIR;?>/resources/icon.phone.svg" />
               <a href="tel:+420777706986" title="Telefon">+420 777 706 986</a>
             </span>
           </div>

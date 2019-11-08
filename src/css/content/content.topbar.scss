@@ -10,6 +10,7 @@
     margin: 0; padding: 0;
 
     li{
+
       font-size: $fontSmall;
       display: inline;
       padding-right: 7px;
@@ -71,6 +72,25 @@
       }
 
         
+    }
+
+  }
+
+  .topbar__icon {
+
+    margin-right: 6px;
+
+    &--mail {
+
+      width: 20px;
+
+    }
+    &--phone {
+
+      height: 13px;
+      position: relative;
+      top: 2px;
+
     }
 
   }
