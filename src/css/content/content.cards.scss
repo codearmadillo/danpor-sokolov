@@ -2,7 +2,7 @@
 
   &-grid {
 
-    display: flex;
+    display: flex !important;
     flex-flow: row wrap;
 
   }
@@ -11,6 +11,20 @@
 
     font-size: 28px;
     margin-top: 48px;
+
+    &-single {
+
+      flex: 0 1 100%;
+      text-align: center;
+      font-size: 2em;
+
+    }
+
+  }
+
+  &-desc {
+
+    margin-bottom: 38px;    
 
   }
 

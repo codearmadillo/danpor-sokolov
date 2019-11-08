@@ -13,7 +13,7 @@
   <div class="container page-main-content">
     <aside class="page-sidebar">
       <?php
-        get_sidebar('pages');
+        get_sidebar('services');
       ?>
     </aside>
     <section class="page-main">
