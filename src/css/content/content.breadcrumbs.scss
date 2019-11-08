@@ -1,17 +1,26 @@
 .page__breadcrumbs{
-    padding: 8px 0;
-    background-color: #fafafa;
 
-    a, i{
-        font-size: $fontSmall;
-        color: rgb(168, 168, 168);
-        text-decoration: none;
-    }
-    i{
-        color: #cecece;
-        padding: 0 6px;
-    }
-    a:last-child{
-        color: #000;
-    }
+  padding: 8px 0;
+  background-color: #fafafa;
+
+  a, i{
+    font-size: $fontSmall;
+    color: rgb(168, 168, 168);
+    text-decoration: none;
+  }
+  i{
+    color: #cecece;
+    padding: 0 6px;
+  }
+  a:last-child{
+    color: #000;
+  }
+
+  .breadcrumbs-icon {
+
+    height: 10px;
+    padding: 0 9px 0 12px;
+
+  }
+
 }
