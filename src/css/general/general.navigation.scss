@@ -15,6 +15,12 @@
 
   }
 
+  @media #{$medium} {
+
+    display: none;
+
+  } 
+
 }
 ul.nav-main{
     z-index: 9999; position: relative;
