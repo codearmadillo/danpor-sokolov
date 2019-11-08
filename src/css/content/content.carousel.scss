@@ -1,20 +1,73 @@
 .page__carousel{
-    padding: 135px 0;
-    text-align: center;
-    background-size: cover;
-    background-position: center center;
-    background-image: url('../res/bck-carousel.jpg');
-    color: #fff;
+  
+  background-size: cover;
+  background-position: center center;
+  background-image: url('../resources/image.carousel.jpg');
+  color: #fff;
 
-    &-mainheadline{
-        margin-top: 0; margin-bottom: 0;
-        font-size: $fontHeadline-First;
+  &-mainheadline{
+
+    flex: 0 1 100%;
+    text-align: center;
+    margin: 0 0 24px;
+    font-size: 50px;
+
+    @media #{$small} {
+
+      text-align: left;
+      font-size: 56px;
+
     }
-    &-subheadline{
-        font-size: $fontHeadline-Second;
-        margin: 20px 0;
+
+  }
+  &-subheadline{
+    
+    flex: 0 1 100%;
+    text-align: center;
+    font-weight: normal;
+    margin: 0 0 42px;
+    font-size: 22px;
+    line-height: 32px;
+
+    @media #{$small} {
+
+      text-align: left;
+      font-size: 22px;
+      line-height: 32px;
+
     }
-    &-button{
-        margin-right: 16px;
+
+  }
+  &-button{
+
+    margin-right: 16px;
+    font-size: 18px !important;
+    min-width: 150px;
+    text-align: center;
+
+  }
+  .container {
+
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    height: 570px;
+    box-sizing: border-box;
+    padding: 32px 16px;
+    justify-content: center;
+
+    @media #{$small} {
+
+      justify-content: flex-start;
+      height: 460px;
+
     }
+
+    @media #{$medium} {
+
+      padding: 56px 0;
+
+    }
+
+  }
 }

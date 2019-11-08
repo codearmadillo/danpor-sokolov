@@ -9,21 +9,21 @@
 ?>
 
 <div class="page__carousel">
-    <div class="container">
-        <h1 class="page__carousel-mainheadline">
-        <?php echo get_field('header', $post->ID)["headline"]; ?>
-        </h1>
-        <h2 class="page__carousel-subheadline">
-        <?php echo $post->post_content; ?>
-        </h2>
-        <?php
-        foreach(get_field('header', $post->ID)["button_group"] as $button){
-            $button = $button["button"];
-            $class = ($button["style"] === "solid") ? 'btn-default btn--fill' :  'btn-default btn--outline';
-            echo '<a href="'.$button["permalink"]["url"].'" title="'.$button["headline"].'" class="'.$class.' page__carousel-button">'.$button["headline"].'</a>';
-        }
-        ?>
-    </div>
+  <div class="container">
+    <h1 class="page__carousel-mainheadline">
+      <?php echo get_field('header', $post->ID)["headline"]; ?>
+    </h1>
+    <h2 class="page__carousel-subheadline">
+      <?php echo $post->post_content; ?>
+    </h2>
+    <?php
+      foreach(get_field('header', $post->ID)["button_group"] as $button){
+        $button = $button["button"];
+        $class = ($button["style"] === "solid") ? 'btn-default btn--fill' :  'btn-default btn--outline';
+        echo '<a href="'.$button["permalink"]["url"].'" title="'.$button["headline"].'" class="'.$class.' page__carousel-button">'.$button["headline"].'</a>';
+      }
+    ?>
+  </div>
 </div>
 <div class="page__content">
   <div class="container">
