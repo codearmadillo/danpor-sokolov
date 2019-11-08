@@ -56,9 +56,9 @@
           $query->the_post();
           $url = get_permalink($post->ID);
           $meta = get_field('snippet');
-          echo '
+          echo '  
           <article class="services-item services__card" style="position: relative;">
-            <span class="services__card-icon"><i class="fas '.$meta["icon"].' fa-2x"></i></span>
+            <span class="services__card-icon"><img class="icon" alt="icon" src="'.CONST_TEMPLATEDIR.'/resources/icon.'.$meta["icon"].'.svg" /></span>
             <h2>'.$meta["headline"].'</h2>
             <p>'.$meta["desc"].'</p>
             <a href="'.$url.'" title="'.$meta["headline"].'" class="btn-default btn--fill services__card-button">Zobrazit více</a>
