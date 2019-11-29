@@ -41,7 +41,7 @@ gulp.task('javascript', function(){
     return gulp.src(input.javascript)
     .pipe(util.env.type === 'production' ? util.noop() : sourcemaps.init())
     .pipe(concat('bundle.js'))
-    .pipe(util.env.type === 'production' ? uglify() : util.noop())
+    // .pipe(util.env.type === 'production' ? uglify() : util.noop())
     .pipe(util.env.type === 'production' ? util.noop() : sourcemaps.write())
     .pipe(util.env.type === 'production' ? gulp.dest(production.javascript) : gulp.dest(output.javascript));
 });

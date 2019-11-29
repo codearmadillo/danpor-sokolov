@@ -32,23 +32,16 @@
 <!doctype html>
 <html lang="cs">
   <head>
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'GA_TRACKING_ID');
-    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46155920-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'UA-46155920-1');
     </script>
+
     <meta charset="utf-8">
     <meta name="author" content="Danpor Sokolov s.r.o.">
     <meta name="description" content="<?php echo $meta['desc']; ?>">
@@ -97,7 +90,7 @@
     <link rel="apple-touch-icon" sizes="152x152" href="<?php echo CONST_TEMPLATEDIR;?>/resources/icon-appletouch-152.png">
 
     <!-- Bundle -->
-    <script type="text/javascript" src="<?php echo CONST_TEMPLATEDIR;?>/dest/bundle.js"></script>
+    <script defer type="text/javascript" src="<?php echo CONST_TEMPLATEDIR;?>/dest/bundle.js"></script>
 
     <!-- Wordpresourcess head -->
     <?php wp_head();?>
